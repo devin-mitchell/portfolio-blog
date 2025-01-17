@@ -1,8 +1,5 @@
 .switch {
   all: unset;
-  position: absolute;
-  right: 20px;
-  top: 70px;
   display: inline-block;
   color: currentColor;
   border-radius: 50%;
@@ -30,13 +27,14 @@
 
 [data-mode="light"] .switch {
   box-shadow: 0 0 50px 10px yellow;
-  background-color: yellow;
-  border: 1px solid orangered;
+  background-color: #facc15;
+  border: 1px solid white;
+  box-shadow: 0 0 10 red;
 }
 
 [data-mode="dark"] .switch {
   box-shadow: calc(var(--size) / 4) calc(var(--size) / -4) calc(var(--size) / 8)
-    inset #fff;
+    inset #000;
   border: none;
   background: transparent;
   animation: n linear 0.5s;

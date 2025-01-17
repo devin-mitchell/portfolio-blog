@@ -38,10 +38,11 @@ const config: Config = {
         md: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },
       animation: {
-        fadeInUp: 'fadeInUp .7s ease-in-out',
-        fadeInDown: 'fadeInDown .7s ease-in-out',
-        fadeInLeft: 'fadeInLeft .7s ease-in-out',
-        fadeInRight: 'fadeInRight .7s ease-in-out'
+        fadeInUp: 'fadeInUp .5s ease-in-out',
+        fadeInDown: 'fadeInDown .5s ease-in-out',
+        fadeInLeft: 'fadeInLeft .5s ease-in-out',
+        fadeInRight: 'fadeInRight .5s ease-in-out',
+        fadeOutDown: 'fadeOutDown .5s ease-in-out forwards'
       },
       keyframes: {
         fadeInUp: {
@@ -51,6 +52,10 @@ const config: Config = {
         fadeInDown: {
           from: { opacity: '0', transform: 'translateY(-100%)' },
           to: { opacity: '1', transform: 'translateY(0%)' }
+        },
+        fadeOutDown: {
+          from: { opacity: '1', transform: 'translateY(0%)' },
+          to: { opacity: '0', transform: 'translateY(100%)' }
         },
         fadeInLeft: {
           from: { opacity: '0', transform: 'translateX(-100%)' },
