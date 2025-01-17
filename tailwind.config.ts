@@ -37,6 +37,30 @@ const config: Config = {
         sm: "0 5px 10px rgba(0, 0, 0, 0.12)",
         md: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },
+      animation: {
+        fadeInUp: 'fadeInUp .7s ease-in-out',
+        fadeInDown: 'fadeInDown .7s ease-in-out',
+        fadeInLeft: 'fadeInLeft .7s ease-in-out',
+        fadeInRight: 'fadeInRight .7s ease-in-out'
+      },
+      keyframes: {
+        fadeInUp: {
+          from: { opacity: '0', transform: 'translateY(100%)' },
+          to: { opacity: '1', transform: 'translateY(0%)' }
+        },
+        fadeInDown: {
+          from: { opacity: '0', transform: 'translateY(-100%)' },
+          to: { opacity: '1', transform: 'translateY(0%)' }
+        },
+        fadeInLeft: {
+          from: { opacity: '0', transform: 'translateX(-100%)' },
+          to: { opacity: '1', transform: 'translateX(0%)' }
+        },
+        fadeInRight: {
+          from: { opacity: '0', transform: 'translateX(100%)' },
+          to: { opacity: '1', transform: 'translateX(0%)' }
+        },
+      },
     },
   },
   plugins: [],
