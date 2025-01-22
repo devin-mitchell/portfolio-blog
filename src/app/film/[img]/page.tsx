@@ -17,7 +17,7 @@ export default async function Page(props: Props) {
         <div className="flex flex-col justify-start h-[90vh] w-full mt-12 gap-4">
           <BackButton href={'/film'} />
           <div className="relative h-full w-full">
-            <Image key={img} alt={`${img} film`} priority className="object-cover object-center rounded" sizes="(min-width: 300px) 50vw, 100vw" src={`/assets/film/${img}`} fill />
+            <Image key={img} alt={`${img} film`} priority className="object-cover object-center rounded" src={`/assets/film/${img}`} fill />
           </div>
         </div>
       </Container>
