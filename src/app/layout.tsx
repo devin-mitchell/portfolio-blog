@@ -5,7 +5,7 @@ import cn from "classnames";
 
 import "./globals.css";
 import Navigation from "./_components/navigation";
-import { figTree } from "@/utils/fonts";
+import { figTree } from "./_components/fonts";
 
 export const metadata: Metadata = {
   title: `Next.js Blog Example with ${CMS_NAME}`,

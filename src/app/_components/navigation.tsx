@@ -17,7 +17,6 @@ export function NavigationHeader() {
           <BrandIconDesktop />
           <MobileNav />
           <DesktopNav />
-
           <div className="hidden md:block absolute top-4 right-4">
             <ThemeSwitcher />
           </div>

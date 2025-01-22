@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { join } from "path";
 
 const postsDirectory = join(process.cwd(), "_posts");
+const filmDirectory = join(process.cwd(), "/public/assets/film/")
 
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
@@ -25,4 +26,8 @@ export function getAllPosts(): Post[] {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
+}
+
+export function getAllImageFileNames() {
+  return fs.readdirSync(filmDirectory)
 }
