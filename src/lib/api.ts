@@ -3,8 +3,9 @@ import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 
-const postsDirectory = join(process.cwd(), "_posts");
-const filmDirectory = join(process.cwd(), "/public/assets/film/")
+export const postsDirectory = join(process.cwd(), "_posts");
+export const filmDirectory = join(process.cwd(), "/public/assets/film/")
+export const letteringDirectory = join(process.cwd(), "/public/assets/lettering/")
 
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
@@ -28,6 +29,6 @@ export function getAllPosts(): Post[] {
   return posts;
 }
 
-export function getAllImageFileNames() {
-  return fs.readdirSync(filmDirectory)
+export function getAllImageFileNames(path: fs.PathLike) {
+  return fs.readdirSync(path)
 }
