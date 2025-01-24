@@ -1,4 +1,7 @@
 import Container from "@/app/_components/container";
+import * as motion from 'motion/react-client'
+import { Project } from "../_components/project";
+import { PROJECTS } from "@/utils/constants";
 
 export default function Index() {
   return (
@@ -12,6 +15,25 @@ export default function Index() {
             A list of projects, work history, skills, and aspirations
           </h4>
         </section>
+
+        {/* PROJECTS */}
+        <section className="min-h-screen flex flex-col items-center gap-12">
+          {PROJECTS.map((project, i) => {
+            const fadeDirection = i % 2 === 0 ? -300 : 300
+
+            return (
+              <motion.div
+                key={project.title}
+                initial={{ opacity: 0, translateX: fadeDirection }}
+                whileInView={{ opacity: 1, translateX: 0 }}
+                className="w-full transition duration-200 ease-linear "
+              >
+                <Project {...project} />
+              </motion.div>
+            )
+          })}
+        </section>
+
       </Container>
     </main>
   );
