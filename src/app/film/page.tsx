@@ -14,7 +14,7 @@ export default function Index() {
           <h1 className=" animate-fadeInUp text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
             Photography
           </h1>
-          <h4 className={`${ibmPlexMono.className} animate-fadeInUp text-center md:text-left text-lg mt-5 md:pl-8`}>
+          <h4 className={`${ibmPlexMono.className} animate-fadeInUp text-center md:text-left text-lg mt-5 `}>
             Point and shoot film
           </h4>
           <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4">
