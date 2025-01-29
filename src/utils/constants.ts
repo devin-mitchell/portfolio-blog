@@ -75,3 +75,29 @@ export const PROJECTS: ProjectType[] = [
   }
 ]
 
+export type Job = {
+  title: string
+  bullets: string[]
+  link?: string
+}
+
+export const WORK_HISTORY: Job[] = [
+  {
+    title: 'Custodia Bank',
+    bullets: [
+      'Built the Front End to customer and admin Money Market Fund products resulting in multimillion dollar deposits',
+      'Managed and addressed the front end team’s vulnerabilities with Snyk and Data Dog having an average time-to-remediation of less than 2 weeks resulting in a repo continually showing no outstanding critical vulns', 'Handle full-stack tickets using Typescript/React, Python/Django, Go, grpc, and sqlc', ' Deploy local dev, as well as ephemeral dev, k8s clusters and manage pods using Skaffold', 'Rotating PagerDuty on-call shifts to remediate production and staging alerts using DataDog monitoring', ' Lead a round of Senior Frontend Interviews concluding with a highly productive and widely respected hire', 'Helped reduce flakey e2e tests by 75% resulting in more reliable user flows and faster/more consistent pipelines'
+    ],
+    link: 'https://custodiabank.com/'
+  },
+  {
+    title: 'Genesis Block / Hightop',
+    bullets: [
+      'Converted repo from Javascript to Typescript to improve engineers productivity and accuracy',
+      'Changed all remaining class components to functional components allowing engineers access to hooks', 'Increased test coverage from roughly 60% to 88% using Jest and testing-library/react-native', 'Worked hastily across other teams to implement a rebranding from Genesis Block to Hightop', 'Lead the frontend implementation of our Golden Ticket feature, which allows users to send friends and family a link to enter the app while avoiding our waitlist', 'Quickly developed skills in Solidity and Vyper to deliver our web3 application resulting in Series A funding'
+    ],
+    link: 'https://www.hightop.com/'
+  }
+]
+
+export const SKILLS = ['Typescript', 'React', 'Next.js', 'Jest', 'Playwright', 'Webpack', 'Elixir', 'Phoenix', 'Ecto', 'Golang', 'REST', 'GraphQL', 'gRPC', 'Animations', 'Git', 'VIM']
