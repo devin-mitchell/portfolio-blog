@@ -9,7 +9,7 @@ type SocialLink = { title: string, icon: React.ReactNode }
 const SOCIAL_LINKS: SocialLink[] = [
   { title: 'GitHub', icon: <FaGithub /> },
   { title: 'Linkedin', icon: <FaLinkedin /> },
-  { title: 'Are.na', icon: <FaGithub /> },
+  { title: 'Are.na', icon: <p>**</p> },
   { title: 'Discogs', icon: <SiDiscogs /> },
   { title: 'SoundCloud', icon: <FaSoundcloud /> },
   { title: 'Strava', icon: <FaStrava /> },

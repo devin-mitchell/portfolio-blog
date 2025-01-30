@@ -18,7 +18,7 @@ export function Tabs({ tabs }: Props) {
       <div className="flex rounded-lg gap-2">
         {tabs.map((tab, i) => {
           return (
-            <button key={tab.title} className={`text-nowrap text-lg tracking py-2 px-4 rounded-lg transition duration-500 ease-in-out ${i === currentTab ? 'bg-black text-white' : 'bg-zinc-200'}`} onClick={() => setCurrentTab(i)}>{tab.title}</button>
+            <button key={tab.title} className={`text-nowrap text-lg tracking py-2 px-4 rounded-lg transition duration-500 ease-in-out hover:bg-zinc-400 ${i === currentTab ? 'bg-black text-white hover:bg-zinc-600' : 'bg-zinc-200'}`} onClick={() => setCurrentTab(i)}>{tab.title}</button>
           )
         })}
       </div>
