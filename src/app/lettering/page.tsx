@@ -3,6 +3,8 @@ import { getAllImageFileNames, letteringDirectory } from "@/lib/api";
 import Image from "next/image";
 import Link from "next/link";
 import { ibmPlexMono } from "../_components/fonts";
+import { Suspense } from "react";
+import { ImgSkeleton } from "../_components/skeletons";
 
 export default function Index() {
   const images = getAllImageFileNames(letteringDirectory)
@@ -21,7 +23,9 @@ export default function Index() {
             {images.map(img => {
               return (
                 <Link key={img} href={`lettering/${img}`} className="relative h-44 w-44">
-                  <Image alt={`${img} lettering`} loading='lazy' className="object-cover hover:object-right-bottom transition-all duration-[1000ms] ease-in-out" sizes="(min-width: 300px) 50vw, 100vw" src={`/assets/lettering/${img}`} fill />
+                  <Suspense key={img} fallback={<ImgSkeleton />}>
+                    <Image alt={`${img} lettering`} loading='lazy' className="object-cover hover:object-right-bottom transition-all duration-[1000ms] ease-in-out" sizes="(min-width: 300px) 50vw, 100vw" src={`/assets/lettering/${img}`} fill />
+                  </ Suspense>
                 </Link>
               )
             })}
