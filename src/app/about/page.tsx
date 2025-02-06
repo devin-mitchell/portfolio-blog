@@ -8,7 +8,7 @@ export default function Index() {
     <main>
 
       <Container>
-        <h1 className="animate-fadeInUp text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 mt-16">
+        <h1 className="animate-fadeInUp text-center md:text-left text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 mt-16 mb-8">
           About.
         </h1>
         {ABOUT_SECTIONS.map(section => {
