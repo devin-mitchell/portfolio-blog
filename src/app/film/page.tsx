@@ -14,7 +14,7 @@ export default function Index() {
       <Container>
         <section className="flex-col flex items-center md:justify-between mt-16 mb-16 md:mb-12">
           <h1 className=" animate-fadeInUp text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-            Photography
+            Film.
           </h1>
           <h4 className={`${ibmPlexMono.className} animate-fadeInUp text-center md:text-left text-lg mt-5 `}>
             Point and shoot film

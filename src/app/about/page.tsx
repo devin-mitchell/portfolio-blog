@@ -6,10 +6,14 @@ import { AboutSectionMobile } from "../_components/about-section-mobile";
 export default function Index() {
   return (
     <main>
+
       <Container>
-        {ABOUT_SECTIONS.map((section, i) => {
+        <h1 className="animate-fadeInUp text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 mt-16">
+          About.
+        </h1>
+        {ABOUT_SECTIONS.map(section => {
           return (
-            <>
+            <div key={section.header}>
               <AboutSection
                 header={section.header}
                 bodyText={section.bodyText}
@@ -24,9 +28,8 @@ export default function Index() {
                 imageSrc={section.imageSrc}
                 imageAlt={section.imageAlt}
                 imageAlignRight={section.imageAlignRight}
-                imageDisplacement={section.imageDisplacement}
               />
-            </>
+            </div>
           )
         })}
       </Container>

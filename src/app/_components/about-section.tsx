@@ -10,7 +10,7 @@ export function AboutSection({ header, bodyText, imageAlt, imageDisplacement, im
 
           <>
             <div className="sticky top-0 flex flex-col md:w-1/2 px-4 h-full w-full">
-              <h2 className="animate-fadeInUp text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
+              <h2 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
                 {header}
               </h2>
               <p className="text-xl w-full">
@@ -34,7 +34,7 @@ export function AboutSection({ header, bodyText, imageAlt, imageDisplacement, im
             </div>
             <div className="sticky top-0 flex flex-col md:w-1/2 px-4 h-full w-full">
 
-              <h2 className="animate-fadeInUp text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
+              <h2 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
                 {header}
               </h2>
               <p className="text-xl w-full">
