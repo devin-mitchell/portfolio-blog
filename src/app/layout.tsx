@@ -8,8 +8,8 @@ import Navigation from "./_components/navigation";
 import { figTree } from "./_components/fonts";
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `Devin Mitchell`,
+  description: `I'm a software engineer working mainly with Typescript/React but always learning new things :)`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },

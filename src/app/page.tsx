@@ -9,7 +9,7 @@ export default function Index() {
 
       <Container>
         <h1 className="animate-fadeInUp text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 mt-16">
-          ABOUT
+          About.
         </h1>
         {ABOUT_SECTIONS.map(section => {
           return (
