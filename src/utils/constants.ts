@@ -113,7 +113,7 @@ export type AboutSectionType = {
 
 export const ABOUT_SECTIONS: AboutSectionType[] = [
   {
-    header: 'ABOUT',
+    header: 'CODING',
     bodyText: "Devin is a software engineer residing in Salt Lake City, Utah.  Specializing in front-end development with React and TypeScript, he is passionate about building intuitive, high-performance web applications with clean, maintainable code. Having a strong focus on user experience and component-driven architecture, Devin loves turning complex problems into elegant, scalable solutions. Always exploring new technologies and best practices to improve development workflows and application performance.",
     imageSrc: '/assets/film/IMG_8545.jpg',
     imageAlt: 'Devin at the NY American Museum of Natural History',
