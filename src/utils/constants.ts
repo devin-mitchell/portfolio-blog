@@ -101,3 +101,37 @@ export const WORK_HISTORY: Job[] = [
 ]
 
 export const SKILLS = ['Typescript', 'React', 'Next.js', 'Jest', 'Playwright', 'Webpack', 'Elixir', 'Phoenix', 'Ecto', 'Golang', 'REST', 'GraphQL', 'gRPC', 'Animations', 'Git', 'VIM']
+
+export type AboutSectionType = {
+  header: string
+  bodyText: string
+  imageSrc: string
+  imageAlt: string
+  imageDisplacement?: string
+  imageAlignRight?: boolean
+}
+
+export const ABOUT_SECTIONS: AboutSectionType[] = [
+  {
+    header: 'ABOUT',
+    bodyText: "Devin is a software engineer residing in Salt Lake City, Utah.  Specializing in front-end development with React and TypeScript, he is passionate about building intuitive, high-performance web applications with clean, maintainable code. Having a strong focus on user experience and component-driven architecture, Devin loves turning complex problems into elegant, scalable solutions. Always exploring new technologies and best practices to improve development workflows and application performance.",
+    imageSrc: '/assets/film/IMG_8545.jpg',
+    imageAlt: 'Devin at the NY American Museum of Natural History',
+    imageAlignRight: true,
+  },
+  {
+    header: 'HOBBIES',
+    bodyText: "Time spent outside of work usually involves riding bicycles with friends, ski-touring in the Wasatch mountains, working on crafts or calligraphy, going to local events, and listening to records.  Salt Lake has much to offer and Devin seems to be taking full advantage.",
+    imageSrc: '/assets/film/IMG_8561.jpg',
+    imageAlt: 'Sitting on the stoop with Bryce the dog',
+    imageDisplacement: '25',
+  },
+  {
+    header: 'BIKING',
+    bodyText: "Biking has become a huge part of his life in recent years and he's managed to wedge himself deeply into the SLC biking community.  He works hard to increase his fitness and handing skills but also loves taking out his basket bike and commuting to the local cafe.  Good coffee is a big incentive to ride a bicycle :)",
+    imageSrc: '/assets/about/squanchy-crit-1.jpeg',
+    imageAlt: '',
+    imageDisplacement: '25',
+    imageAlignRight: true,
+  },
+]

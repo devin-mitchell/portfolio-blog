@@ -1,6 +1,6 @@
 ---
 title: "SLC Underground Bike Racing"
-excerpt: "Track bikes, hot-laps, smack talk, and wipeouts.  Social Scientists will study this for years."
+excerpt: "Track bikes, hot-laps, smack talk, and wipeouts."
 coverImage: "/assets/blog/garage_crit/img2.JPG"
 date: "2025-12-29T05:35:07.322Z"
 author:
@@ -12,7 +12,7 @@ ogImage:
 
 ## Grab your bike but forget your brakes
 
-In the dead of Salt Lake City's winters, the local ***[fixed gear](https://en.wikipedia.org/wiki/Fixed-gear_bicycle)*** community is thriving.  Scurrying to the bottom level of parking garages, this group holds unofficial and undergroud ***[crit races](https://en.wikipedia.org/wiki/Criterium)*** with a simple set of rules.
+In the dead of Salt Lake City's winter, the local ***[fixed gear](https://en.wikipedia.org/wiki/Fixed-gear_bicycle)*** community is thriving.  Scurrying to the bottom level of parking garages, this group holds unofficial and undergroud ***[crit races](https://en.wikipedia.org/wiki/Criterium)*** with a simple set of rules.
 
     - One Gear
     - Drop bars
@@ -47,13 +47,3 @@ The people who put this together have been riding track bikes for a long time an
 
 
 ![biking](/assets/blog/garage_crit/img4.JPG)
-
----
-
-
-A Word from the creators:
-
-
-- [Sawer's Photography](https://www.sawyer.bike/Cycling/Crit-Racing/SLC-Fixed/December-29-2024)
-- [Nick](https://www.nicksantosmedia.com/)
-- [ADD Pete's VIDEO]()
