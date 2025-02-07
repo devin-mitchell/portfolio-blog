@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ExitIcon } from "./svg/exitIcon"
 import { NAV_SECTIONS } from "@/utils/constants"
 import Link from "next/link"
@@ -8,6 +8,14 @@ import { AnimatePresence } from "motion/react"
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-y-hidden")
+    } else {
+      document.body.classList.remove("overflow-y-hidden")
+    }
+  }, [isOpen])
 
   return (
     <>

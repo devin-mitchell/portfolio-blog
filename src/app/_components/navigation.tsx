@@ -1,5 +1,4 @@
 import Container from "@/app/_components/container";
-import { ThemeSwitcher } from "./theme-switcher";
 import MobileNav from "./mobile-nav";
 import { BrandIconMobile } from "./svg/brandMobile";
 import { BrandIconDesktop } from "./svg/brandDesktop";
@@ -15,9 +14,10 @@ export function NavigationHeader() {
           <BrandIconDesktop />
           <MobileNav />
           <DesktopNav />
-          <div className="hidden absolute top-4 right-4">
-            <ThemeSwitcher />
+          {/* <div className="hidden absolute top-4 right-4">
+             <ThemeSwitcher />
           </div>
+          */}
         </div>
       </Container>
     </nav>
