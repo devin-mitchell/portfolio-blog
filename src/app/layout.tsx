@@ -6,6 +6,7 @@ import cn from "classnames";
 import "./globals.css";
 import Navigation from "./_components/navigation";
 import { figTree } from "./_components/fonts";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: `Devin Mitchell`,
@@ -58,6 +59,7 @@ export default function RootLayout({
       <body
         className={cn(figTree.className, "dark:bg-zinc-800 dark:text-zinc-200")}
       >
+        <Analytics />
         <Navigation />
         <div className="min-h-screen">{children}</div>
         <Footer />
