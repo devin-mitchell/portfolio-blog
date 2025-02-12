@@ -1,10 +1,4 @@
 "use client"
-import { useEffect, useState } from "react"
-import { ExitIcon } from "./svg/exitIcon"
-import { NAV_SECTIONS } from "@/utils/constants"
-import Link from "next/link"
-import * as motion from 'motion/react-client'
-import { AnimatePresence } from "motion/react"
 import { useModal } from "./context/modal"
 
 export default function MobileNav() {

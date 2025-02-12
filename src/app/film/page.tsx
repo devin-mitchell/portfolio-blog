@@ -22,8 +22,8 @@ export default function Index() {
           <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4">
             {images.map(img => {
               return (
-                <Link href={`film/${img}`} className="relative h-44 w-44">
-                  <Suspense key={img} fallback={<ImgSkeleton />}>
+                <Link key={img} href={`film/${img}`} className="relative h-44 w-44">
+                  <Suspense fallback={<ImgSkeleton />}>
                     <Image alt={`${img} film`} loading='lazy' className="object-cover hover:object-right-bottom transition-all duration-[1000ms] ease-in-out" sizes="(min-width: 300px) 50vw, 100vw" src={`/assets/film/${img}`} fill />
                   </Suspense>
                 </Link>
