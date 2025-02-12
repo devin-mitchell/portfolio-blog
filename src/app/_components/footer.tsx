@@ -4,15 +4,15 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin, FaSoundcloud, FaStrava } from "react-icons/fa";
 import { SiDiscogs } from "react-icons/si";
 
-type SocialLink = { title: string, icon: React.ReactNode }
+type SocialLink = { title: string, icon: React.ReactNode, link: string }
 
 const SOCIAL_LINKS: SocialLink[] = [
-  { title: 'GitHub', icon: <FaGithub /> },
-  { title: 'Linkedin', icon: <FaLinkedin /> },
-  { title: 'Are.na', icon: <p>**</p> },
-  { title: 'Discogs', icon: <SiDiscogs /> },
-  { title: 'SoundCloud', icon: <FaSoundcloud /> },
-  { title: 'Strava', icon: <FaStrava /> },
+  { title: 'GitHub', icon: <FaGithub />, link: 'https://github.com/devin-mitchell' },
+  { title: 'Linkedin', icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/devin-mitchell100/' },
+  { title: 'Are.na', icon: <p>**</p>, link: 'https://www.are.na/devin-mitchell/channels' },
+  { title: 'Discogs', icon: <SiDiscogs />, link: 'https://www.discogs.com/user/carrots_45' },
+  { title: 'SoundCloud', icon: <FaSoundcloud />, link: 'https://soundcloud.com/devin-mitchell-651184784' },
+  { title: 'Strava', icon: <FaStrava />, link: 'https://www.strava.com/athletes/9335200' },
 ]
 
 export function Footer() {
@@ -25,11 +25,11 @@ export function Footer() {
           </h3>
           <div className="flex justify-between w-full">
             <ul className="flex flex-col gap-6 w-full">
-              {SOCIAL_LINKS.map(link => {
+              {SOCIAL_LINKS.map(social => {
                 return (
-                  <li key={link.title}>
-                    <a className="w-full h-full flex items-center gap-2 text-lg" href="https://github.com/devin-mitchell" target="_blank">
-                      {link.icon}<p>{link.title}</p>
+                  <li key={social.title}>
+                    <a className="w-full h-full flex items-center gap-2 text-lg" href={social.link} target="_blank">
+                      {social.icon}<p>{social.title}</p>
                     </a>
                   </li>
                 )
