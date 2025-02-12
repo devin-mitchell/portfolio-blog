@@ -5,6 +5,11 @@ import Link from "next/link";
 import { ibmPlexMono } from "../_components/fonts";
 import { Suspense } from "react";
 import { ImgSkeleton } from "../_components/skeletons";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Lettering',
+}
 
 export default function Index() {
   const images = getAllImageFileNames(letteringDirectory)

@@ -6,7 +6,7 @@ import { getAllPosts } from "@/lib/api";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'CODE',
+  title: 'Blog',
 }
 
 export default function Index() {

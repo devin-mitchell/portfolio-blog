@@ -2,6 +2,11 @@ import Container from "@/app/_components/container";
 import { AboutSection } from "../_components/about-section";
 import { ABOUT_SECTIONS } from "@/utils/constants";
 import { AboutSectionMobile } from "../_components/about-section-mobile";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'About',
+}
 
 export default function Index() {
   return (
