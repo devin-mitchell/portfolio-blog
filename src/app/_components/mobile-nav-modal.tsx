@@ -17,7 +17,7 @@ export function MobileNavModal() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 1000, opacity: 0 }}
           transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
-          className={`z-10 overscroll-contain absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center bg-gradient-to-br from-violet-300 from-20% via-fuchsia-300 via-30% to-rose-300 via-70%`}>
+          className={`no-doc-scroll z-10 absolute top-0 h-screen w-screen  flex flex-col justify-center bg-gradient-to-br from-violet-300 from-20% via-fuchsia-300 via-30% to-rose-300 via-70% overflow-y-hidden`}>
           <button
             onClick={() => remove()}
             className="absolute top-8 right-8 flex items-center justify-center border border-zinc-900 p-2 rounded-full  h-12 w-12 flex active:bg-zinc-50">
