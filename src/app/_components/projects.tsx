@@ -14,7 +14,9 @@ export function Projects() {
               key={project.title}
               initial={{ opacity: 0, translateX: fadeDirection }}
               whileInView={{ opacity: 1, translateX: 0 }}
-              className="w-full rounded-lg duration-200 ease-linear"
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
+              className="w-full rounded-lg"
             >
               <Project {...project} />
             </motion.div>

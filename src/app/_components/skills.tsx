@@ -10,7 +10,9 @@ export function Skills({ skills }: Props) {
     <motion.div
       initial={{ opacity: 0, translateY: 300 }}
       whileInView={{ opacity: 1, translateY: 0 }}
-      className="w-full max-w-[800px] rounded-lg duration-200 ease-linear"
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className="w-full max-w-[800px] rounded-lg"
     >
       <ul className="w-full grid grid-cols-2 gap-6 rounded-xl px-6 py-10 bg-gradient-to-br from-violet-300 from-20% via-fuchsia-300 via-30% to-rose-300 via-70% ">
         {skills.map(skill => {
