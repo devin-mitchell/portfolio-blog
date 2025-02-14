@@ -128,7 +128,7 @@ export const ABOUT_SECTIONS: AboutSectionType[] = [
   },
   {
     header: 'BIKING',
-    bodyText: "Biking has become a huge part of his life in recent years and he's managed to wedge himself deeply into the SLC biking community.  He works hard to increase his fitness and handing skills but also loves taking out his basket bike and commuting to the local cafe.  Good coffee is a big incentive to ride a bicycle :)",
+    bodyText: "Biking has become a huge part of his life in recent years and he's managed to wedge himself deeply into the SLC biking community.  He works hard to increase his fitness and bike-handling skills but also loves taking out his basket bike and commuting to the local cafe.  Good coffee is a big incentive to ride a bicycle :)",
     imageSrc: '/assets/about/squanchy-crit-1.jpeg',
     imageAlt: '',
     imageDisplacement: '25',
