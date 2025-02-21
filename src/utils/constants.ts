@@ -33,14 +33,6 @@ export type ProjectType = {
 
 export const PROJECTS: ProjectType[] = [
   {
-    title: 'BTC Comparison',
-    description: 'A React application that allows users to input two BTC wallet addresses and display the transaction history between the two.  I am using the blockcypher API to obtain ledger data for this project.',
-    links: {
-      github: 'https://github.com/devin-mitchell/BTC_address_comparison'
-    },
-    technologies: ['Vite', 'Typescript', 'React', 'Vitest', 'Tailwind']
-  },
-  {
     title: 'Next Dashboard',
     description: 'This is a Next.js application that gives admin users a way to manage customer invoices.  This app uses app-router, server-components, partial prerendering, authentication, and more.',
     links: {
@@ -56,6 +48,22 @@ export const PROJECTS: ProjectType[] = [
       github: 'https://github.com/devin-mitchell/rumbl'
     },
     technologies: ['Elixir', 'Phoenix', 'LiveView', 'Ecto', 'PostgreSQL']
+  },
+  {
+    title: 'Roman Numeral Converter',
+    description: "A simple, yet robust and well tested, containerized Node service with a React/Typescript UI that converts a number to the corresponding roman numeral.",
+    links: {
+      github: 'https://github.com/devin-mitchell/number-to-roman-numeral'
+    },
+    technologies: ['React', 'TypeScript', 'Vite', 'Vitest', 'Node', 'Express', 'Docker']
+  },
+  {
+    title: 'BTC Comparison',
+    description: 'A React application that allows users to input two BTC wallet addresses and display the transaction history between the two.  I am using the blockcypher API to obtain ledger data for this project.',
+    links: {
+      github: 'https://github.com/devin-mitchell/BTC_address_comparison'
+    },
+    technologies: ['Vite', 'Typescript', 'React', 'Vitest', 'Tailwind']
   },
   {
     title: 'Wordle Clone',
