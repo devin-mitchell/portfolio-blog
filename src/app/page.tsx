@@ -22,7 +22,7 @@ const pageTabs = [
 ]
 
 export const metadata: Metadata = {
-  title: 'CODE',
+  title: 'Devin Mitchell',
 }
 
 export default function Index() {
